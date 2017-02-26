@@ -1,0 +1,35 @@
+Here are som comments about what I've gathered so far.
+
+Data selection process seems invalid. If data is invalid, the whole analysis will be invalid. The two main reasons why I think data is invalid are:
+
+1. Measuring how sustainable a project is as a function of development time is not an accurate measure.
+
+There may be projects that are sustained for a long time because they have corporate sponsors even though they had low quality code, and there may also be projects that had great quality code but died because the developers could not afford to continue working on them.
+
+Unfortunately project sustainability is very hard to measure objectively. So we could continue with this way, knowing that there's this handicap, or we can incorporate other factors like number of time the project has been cloned, number of times the project has been "starred", number of contributor addition over time, commit acceleration into the repository, etc. These metrics indicate that the project is being useful to others, and that people want to contribute to the project. If we take the commit acceleration into account and find that new code is created instead of a lot of refactoring, we could argue that the project is well designed as it allows an accelerated commit rate (as succesful open source projects do) and so good quality code improves sustainability. However we can not get this information from looking only into the date range for commits.
+
+The metrics I mentioned can be extracted from the repository itself. Also, we are able to find which files tend to be more problematic (people don't want to change them) or stable (they don't need too much change because they were general enough), through analyzing the commits. Unfortunately this could take up to months of work.
+
+2. You included many repositories for which the main measure (sustainability, measured as the range between the first and last commits), is not valid.
+
+As you pointed out in the document, there are repositories that have a lifespan of 0 days because they were just "put into" a Git repository, even though they may be pretty big. This introduces a big bias into the data and voids any results from the analysis that include that data.
+
+The solution is to keep only repositories that were started within a Git repository since day one. This may be very hard to verify. I suggest we use a combination of the two points I mentioned. I suggest we incorporate more metrics for "sustainability" other than the day range of activity, and I suggest we filter out repositories we can not validate we have the real metrics for (like not having full lifespan).
+
+If we don't do that, I do no think the analysis will be objective and valid. However, since there may be not enough time, then we can just continue using the metric you propose but mention that there's more research coming up that uses other metrics to measure sustainability, and filter out those repositories we do not have full lifespan for (at least make sure they are not in the projects selected for the metric computation part (the ones I'll use for the analysis), but doing this by hand is not statistically correct).
+
+Another thing is that, the more metrics you can compute about the code, the better analysis I can make, so if you chose for some reason only those 6 metrics, but you are able to compute others, please do so.
+
+Some minor questions are:
+
+1. Why did you decide on using 19 segments for the sustainability metric?
+2. Why did you select 2009 as the cutoff point for the start date?
+
+I'm not sure if this will be useful for you, but Google recently made all of GitHub's repositories available for analysis in Google Cloud through Big Query. Maybe it's a place where you could get the data from (I have not used it so I am not certain it will be useful).
+
+- https://cloudplatform.googleblog.com/2016/06/GitHub-on-BigQuery-analyze-all-the-open-source-code.html
+- https://www.githubarchive.org/
+- https://github.com/blog/2201-making-open-source-data-more-available
+- https://cloud.google.com/bigquery/public-data/github
+
+There are other questions, but those should wait until we figure out what I mentioned before. Please let me know how you want to procede. Thanks.
