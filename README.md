@@ -5,13 +5,16 @@
 
 # Statistical Analysis of Code Quality
 
-- Developed by Omar Trejo
-- Developed for client (YC, CM)
+- Omar Trejo
 - August, 2016
 
-Statistical Analysis of Java source code quality metrics to understand the relation between code quality and project sustainability, where project sustainability is defined as software that can be reused in future projects.
+Statistical Analysis of Java source code quality metrics to understand the
+relation between code quality and project sustainability, where project
+sustainability is defined as software that can be reused in future projects.
 
-In this analysis we are trying to find out if good coding practices will lead to more sustainable software. It has been proposed that sustainability should be considered a requirement for projects.
+In this analysis we are trying to find out if good coding practices will lead to
+more sustainable software. It has been proposed that sustainability should be
+considered a requirement for projects.
 
 ## Objective
 
@@ -26,7 +29,9 @@ In this analysis we are trying to find out if good coding practices will lead to
 
 ## Data
 
-Data used for the analysis comes from GitHub repositories. The selection included programming language used and start dates. Java repositories with a start date between January 1st and December 31st of 2009 were selected.
+Data used for the analysis comes from GitHub repositories. The selection
+included programming language used and start dates. Java repositories with a
+start date between January 1st and December 31st of 2009 were selected.
 
 #### NOTES
 
