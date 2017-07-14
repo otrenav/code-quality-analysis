@@ -1,4 +1,8 @@
 
+| [Website](http://links.otrenav.com/website) | [Twitter](http://links.otrenav.com/twitter) | [LinkedIn](http://links.otrenav.com/linkedin)  | [GitHub](http://links.otrenav.com/github) | [GitLab](http://links.otrenav.com/gitlab) | [CodeMentor](http://links.otrenav.com/codementor) |
+
+---
+
 # Statistical Analysis of Code Quality
 
 - Developed by Omar Trejo
@@ -62,3 +66,9 @@ After following the mentioned procedure, the result was:
 
 - Multiple Linear Regressions
 - Correlation between metrics and segments
+
+---
+
+> "The best ideas are common property."
+>
+> —Seneca
