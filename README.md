@@ -1,9 +1,9 @@
 
-| [Website](http://links.otrenav.com/website) | [Twitter](http://links.otrenav.com/twitter) | [LinkedIn](http://links.otrenav.com/linkedin)  | [GitHub](http://links.otrenav.com/github) | [GitLab](http://links.otrenav.com/gitlab) | [CodeMentor](http://links.otrenav.com/codementor) |
+[Delta Lab](https://links.deltalab.ai/website) | [Twitter](https://links.deltalab.ai/twitter) | [LinkedIn](https://links.deltalab.ai/linkedin)
 
 ---
 
-# Statistical Analysis of Code Quality
+# Statistical Code Quality Analysis
 
 - Omar Trejo
 - August, 2016
@@ -74,6 +74,5 @@ After following the mentioned procedure, the result was:
 
 ---
 
-> "The best ideas are common property."
->
-> —Seneca
+> "We are the people we have been waiting for."
+
